@@ -1,0 +1,12 @@
+http://stackoverflow.com/questions/15074878/virtual-box-uuid-07c3-does-not-match-the-value-2c1b-stored-in-th
+
+Here's what fixed this error for me (using VirtualBox 4.3):
+
+Go to File → Virtual Media Manager
+In the Hard drives tab, you should see a red exclamation point icon beside the disk image you're having trouble with. Select it → Release → Remove → Close.
+Go back into the settings for the VM and readd the disk.
+To prevent the error in the future, before deleting the virtual disk image files, remove them from the Virtual Media Manager:
+
+Go to File → Virtual Media Manager
+In the Hard drives tab, find the virtual disk you want to remove, select it → Release → Remove → Keep (or Delete if you want to delete it permanently) → Close.
+Go back into the settings for the VM and readd the disk.
